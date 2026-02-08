@@ -10,6 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="mycar.css">
 </head>
 <body>
+	<audio id="bgMusic" autoplay loop muted>
+    <source src="S.mp3" type="audio/mpeg">
+  </audio>
+
+	
 	<center>
 		<img src="Light Version.png" width="45%"><br>
 		<span class="s">Light Version of Premeum Model</span>
@@ -685,9 +690,18 @@
 	<br><h1 style="background-color: pink;">Thanks for watching.</h1><hr> 
 	<button><a href="https://www.google.com/">REFERNCE</a><br></button>
 	<button><a href="https://www.wikipedia.org/">SOURCE</a></button>
+
+	<script>
+    window.addEventListener("click", () => {
+      const audio = document.getElementById("bgMusic");
+      audio.muted = false;
+      audio.play();
+    }, { once: true });
+  </script>
 </body>
 
 </html>
+
 
 
 
